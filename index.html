@@ -12,22 +12,26 @@
   <body>
     <div class="weather-forecast">
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search"/>
+      <form class="search-form">
+        <input type="search" placeholder="Enter a city.." required class="search-input" />
+        <input type="submit" value="Search" class="search-button"/>
     </header>
     <main>
+        <div class="weather-data">
         <div>
-      <h1>Paris</h1>
-      <p>
+      <h1 class="city">Paris</h1>
+      <p class="weather-details">
         Sunday 14:09, Scattered clouds
         </br>
-        Humidity: 66%, Wind: 3.13km/h
+        Humidity:<strong> 66% </strong>, Wind: <strong> 3.13km/h</strong>
         </p>
         </div>
-        <div>
-      🌤️12°C
+        <div class="weather-condition-container">
+   <div class="weather-icon"> 🌤️</div>
+   <div class="weather-value">12</div>
+   <div class="weather-unit">°C</div>
       </div>
+        </div>
     </main>
     <footer>
       This project was coded by
