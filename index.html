@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/style.css">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>My weather page</title>
   </head>
   <body>
@@ -21,14 +22,14 @@
         <div>
       <h1 class="city"id="city">Paris</h1>
       <p class="weather-details">
-        Sunday 14:09, Scattered clouds
+        Sunday 14:09,<span id="descript"></span> Scattered clouds
         </br>
         Humidity:<strong> 66% </strong>, Wind: <strong> 3.13km/h</strong>
         </p>
         </div>
         <div class="weather-condition-container">
    <div class="weather-icon"> 🌤️</div>
-   <div class="weather-value">12</div>
+   <div class="weather-value" id="temperature"></div>
    <div class="weather-unit">°C</div>
       </div>
         </div>
