@@ -74,6 +74,8 @@ main {
   font-size: 44px;
   margin-top: 22px;
   margin-left: 10px;
+  width: 88px;
+  height: 88px;
 }
 .weather-unit {
   margin: 16px;
